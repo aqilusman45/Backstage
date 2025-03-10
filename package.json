@@ -13,7 +13,7 @@
     "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
     "lint:fix": "npm run format && npm run lint -- --fix",
     "prepare": "husky",
-    "tsc": "tsc"
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
     "classnames": "^2.5.1",
