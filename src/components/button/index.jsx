@@ -8,7 +8,7 @@ const Button = ({
   form,
   onClick,
   type,
-  size = "medium",
+  size,
 }) => {
   const buttonClasses = classNames(
     "cursor-pointer font-instrument-sans transition-all duration-300 ease-in-out group relative overflow-hidden",
@@ -18,7 +18,7 @@ const Button = ({
 
       "rounded-full font-medium text-xxii px-medium-x py-medium-y ":
         size === "large",
-      "rounded-full text-xl font-medium px-medium-x py-normal-y ":
+      "rounded-full text-20 font-medium px-medium-x py-normal-y ":
         size === "medium",
     },
     otherClasses,
