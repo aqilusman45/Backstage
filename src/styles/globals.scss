@@ -34,3 +34,33 @@
   --spacing-1120: 70rem;
   --spacing-205: 12.813rem;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes textFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-fade {
+  animation: textFade 2s ease-out forwards;
+}

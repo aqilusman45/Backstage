@@ -15,7 +15,7 @@ export default function PricingCard({
 }) {
   const pricingCardClasses = classnames(
     otherClasses,
-    "border border-black/15 rounded-3xl px-3 py-7 bg-white relative ",
+    "border border-black/15 rounded-3xl px-3 py-7 bg-white relative hover:shadow-lg ",
     popular ? "border-primary mt-12 md:mt-0" : "mt-0",
   );
   return (
