@@ -11,6 +11,7 @@ export default function PricingCard({
   features,
   popular,
   stripe,
+  size,
 }) {
   const pricingCardClasses = classnames(
     otherClasses,
@@ -31,8 +32,15 @@ export default function PricingCard({
           <h3 className="text-xl font-instrument-sans font-medium italic text-center">
             {title}
           </h3>
-          <p className="text-50 font-semibold text-center my-4 ">{price}</p>
-          <p className="text-base text-gray-600 text-center flex-grow mb-5 mb-7 text-gray-900">
+          <p
+            className={classnames(
+              size == "small" ? "text-40 py-2" : "text-50 ",
+              "font-semibold text-center my-4",
+            )}
+          >
+            {price}
+          </p>
+          <p className="text-base text-gray-600 text-center flex-grow mb-5 mb-7">
             {description}
           </p>
           <Button

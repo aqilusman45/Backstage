@@ -14,7 +14,7 @@ export default function PricingPlan({ otherClasses }) {
       <div className="my-32 text-center max-w-1120 mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
           <span className="w-40 hidden sm:block"></span>
-          <h2 className="text-65 font-bold order-1 sm:order-0 text-black mb-6 font-instrument-sans uppercase text-center">
+          <h2 className="text-65 font-bold order-1 sm:order-0 text-black font-instrument-sans uppercase text-center">
             {title} <span className="font-medium italic">{subTitle}</span>
           </h2>
 
@@ -23,7 +23,7 @@ export default function PricingPlan({ otherClasses }) {
             width={205}
             height={205}
             alt="Get Started Image"
-            className="max-w-40 max-h-40 order-0 sm:order-1"
+            className="max-w-205 max-h-205 order-0 sm:order-1 animate-[spin_10s_linear_infinite]"
           />
         </div>
         <p className="text-30 font-medium mt-7 mb-12 font-instrument-sans">

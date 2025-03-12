@@ -63,6 +63,7 @@ export const homePageMocks = {
         "Full security audit",
       ],
       stripe: false,
+      size: "small",
     },
   ],
   subText: `Unsure? We o!er a 100% money back guarantee with all our plans. We
