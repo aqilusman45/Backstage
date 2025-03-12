@@ -41,7 +41,7 @@ export default function PricingPlan({ otherClasses }) {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-4 my-14 lg:my-20">
+        <div className="flex flex-wrap items-center justify-between gap-4 my-14 lg:my-20 px-4">
           <p className="flex-1 font-instrument-sans font-medium text-2xl lg:text-2rem lg:text-start text-center max-w-[703px] mx-auto lg:mx-0">
             {subText}
           </p>
