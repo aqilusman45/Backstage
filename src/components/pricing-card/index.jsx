@@ -10,17 +10,18 @@ export default function PricingCard({
   description,
   features,
   popular,
+  stripe,
 }) {
-  const pricingCardClasses = classnames("h-full", otherClasses);
+  const pricingCardClasses = classnames(
+    otherClasses,
+    "border border-black/15 rounded-3xl px-3 py-7 bg-white relative ",
+    popular ? "border-primary mt-12 md:mt-0" : "mt-0",
+  );
   return (
-    <div
-      className={`border rounded-xl px-3 py-5  shadow-lg bg-white relative ${
-        popular ? "border-purple-500 mt-9 md:mt-0" : "mt-0"
-      }`}
-    >
+    <div className={pricingCardClasses} data-testid="pricing-plan">
       {popular && (
-        <div className="text-center text-sm font-semibold bg-primary w-full text-white py-8 rounded-t-lg absolute -top-12 -z-10 left-0">
-          <span className="pb-4 -mt-5 block h-full text-xl text-black font-normal">
+        <div className="text-center text-sm font-semibold bg-primary w-full text-white py-12 rounded-t-3xl absolute -top-14 -z-10 left-0">
+          <span className="pb-4 -mt-8 block h-full text-xl text-black font-normal">
             Most Popular
           </span>
         </div>
@@ -42,8 +43,8 @@ export default function PricingCard({
           />
         </div>
 
-        <ul className="mt-4 text-sm space-y-2 flex-1">
-          <li className="text-xl font-medium font-instrument-sans text-start mb-2">
+        <ul className="mt-4 text-sm space-y-2 flex-1 px-5">
+          <li className="text-xl font-medium font-instrument-sans text-start mb-2 mt-8">
             What's included:
           </li>
           {features.map((feature, index) => (
@@ -62,21 +63,23 @@ export default function PricingCard({
             </li>
           ))}
         </ul>
-        <div className="mt-4 flex items-center justify-center">
-          <Link
-            href="#"
-            className="flex items-center gap-2  text-black text-base font-instrument-sans font-normal"
-          >
-            Paid via |{" "}
-            <Image
-              src="/svg/stripe.svg"
-              width={65}
-              height={30}
-              alt="Get Started Image"
-              className="max-w-16 max-h-16 object-cover"
-            />
-          </Link>
-        </div>
+        {stripe && (
+          <div className="mt-4 flex items-center justify-center">
+            <Link
+              href="#"
+              className="flex items-center gap-2  text-black text-base font-instrument-sans font-normal"
+            >
+              Paid via |{" "}
+              <Image
+                src="/svg/stripe.svg"
+                width={65}
+                height={30}
+                alt="Get Started Image"
+                className="max-w-16 max-h-16 object-cover"
+              />
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

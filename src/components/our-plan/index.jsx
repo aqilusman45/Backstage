@@ -11,15 +11,15 @@ export default function OurPlan({ otherClasses, feature }) {
 
   return (
     <div className={ourPlanClasses} data-testid="our-plan">
-      <div className="flex items-center gap-4 pr-3">
+      <div className="flex items-center">
         <Image
-          src="/fake-image.jpg"
-          width={24}
-          height={24}
-          alt="fake image"
-          className="rounded-md"
+          src={feature.icon}
+          width={40}
+          height={40}
+          alt={feature.icon}
+          className="rounded-md w-10 h-10"
         />
-        <span className="text-base font-medium  md:text-xxii font-medium font-instrument-sans">
+        <span className="text-base font-medium  md:text-xxii font-medium font-instrument-sans px-7">
           {feature?.title}
         </span>
       </div>

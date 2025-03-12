@@ -5,12 +5,12 @@ import classnames from "classnames";
 import Image from "next/image";
 
 const features = [
-  { icon: "⭐", title: "Branded big screen interface" },
-  { icon: "👨‍💻", title: "Real-time moderation panel" },
-  { icon: "🔑", title: "GDPR compliance" },
-  { icon: "📱", title: "Recording app (no app required)" },
-  { icon: "📸", title: "Shareable recordings" },
-  { icon: "🛡️", title: "Private admin console" },
+  { icon: "/svg/brand.svg", title: "Branded big screen interface" },
+  { icon: "/svg/real-time.svg", title: "Real-time moderation panel" },
+  { icon: "/svg/gdpr.svg", title: "GDPR compliance" },
+  { icon: "/svg/recording-app.svg", title: "Recording app (no app required)" },
+  { icon: "/svg/shareable-recordings.svg", title: "Shareable recordings" },
+  { icon: "/svg/private-aadmin.svg", title: "Private admin console" },
 ];
 
 const pricingPlans = [
@@ -27,6 +27,7 @@ const pricingPlans = [
       "3-day lead time",
       "Email support",
     ],
+    stripe: true,
   },
   {
     title: "Agency",
@@ -42,6 +43,7 @@ const pricingPlans = [
       "Phone support",
     ],
     popular: true,
+    stripe: true,
   },
   {
     title: "Enterprise",
@@ -59,11 +61,12 @@ const pricingPlans = [
       "Event analytics",
       "Full security audit",
     ],
+    stripe: false,
   },
 ];
 
 export default function PricingPlan({ otherClasses }) {
-  const pricingPlanClasses = classnames(otherClasses, "px-4");
+  const pricingPlanClasses = classnames(otherClasses, "px-6");
 
   return (
     <section className={pricingPlanClasses} data-testid="pricing-plan">
@@ -85,13 +88,13 @@ export default function PricingPlan({ otherClasses }) {
         <p className="text-30 font-medium mt-7 mb-12 font-instrument-sans">
           All our plans come with the essentials
         </p>
-        <div className="flex items-center justify-center flex-wrap gap-4">
+        <div className="flex items-center justify-center flex-wrap gap-4 mb-20">
           {features.map((feature, index) => (
             <OurPlan key={index} feature={feature} />
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full my-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-32 mb-20">
           {pricingPlans.map((plan, index) => (
             <PricingCard key={index} {...plan} />
           ))}
