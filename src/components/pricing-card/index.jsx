@@ -40,7 +40,7 @@ export default function PricingCard({
           >
             {price}
           </p>
-          <p className="text-base text-gray-600 text-center flex-grow mb-5 mb-7">
+          <p className="text-base text-gray-600 font-instrument-sans text-center flex-grow mb-5 mb-7">
             {description}
           </p>
           <Button
@@ -52,7 +52,7 @@ export default function PricingCard({
         </div>
 
         <ul className="mt-4 text-sm space-y-2 flex-1 px-5">
-          <li className="text-xl font-medium font-instrument-sans text-start mb-2 mt-8">
+          <li className="text-lg font-medium font-instrument-sans text-start mb-2 mt-8">
             What's included:
           </li>
           {features.map((feature, index) => (
