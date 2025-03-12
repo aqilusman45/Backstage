@@ -35,7 +35,7 @@ export default function PricingCard({
           <p
             className={classnames(
               size == "small" ? "text-40 py-2" : "text-50 ",
-              "font-semibold text-center my-4",
+              "font-semibold text-center my-4 font-instrument-sans",
             )}
           >
             {price}
