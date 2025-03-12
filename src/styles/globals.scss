@@ -5,8 +5,12 @@
 @theme {
   --font-instrument-sans: "Instrument Sans", ui-sans-serif;
 
+  // colors
   --color-primary: #c5adf9;
+  --color-secondary: #c5adf9;
+  --color-gray-900: #afafaf;
 
+  // text size
   --text-xxii: 1.375rem;
   --text-xxii--line-height: calc(1.75 / 1.375);
 
@@ -16,8 +20,13 @@
   --text-20: 1.25rem;
 
   --text-65: 4.063rem;
-  --text-65--line-height: calc(1.75 / 4.063);
+  --text-65--line-height: 4.3rem;
 
+  --text-30: 1.875rem;
+
+  --text-50: 3.125rem;
+
+  // spacing
   --spacing-medium-y: 1.563rem;
   --spacing-medium-x: 5.625rem;
 
