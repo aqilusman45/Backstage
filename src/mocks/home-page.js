@@ -73,4 +73,68 @@ export const homePageMocks = {
     title: "Prefer to talk it through first?",
     text: `If there's something we've missed, please get in touch and we can help answer your questions or queries.`,
   },
+
+  featureSections: [
+    {
+      title: "Top Features",
+      data: [
+        "Big-screen app",
+        "Fan recording app",
+        "Real-time moderation panel",
+        "Shareable recordings",
+        "Consent tracking & GDPR",
+      ],
+      isBoolean: true,
+      key: "features",
+    },
+    { title: "Custom branding", data: "branding" },
+    { title: "Upload limit", data: "uploadLimit", header: true },
+    { title: "Usage period", data: "usagePeriod" },
+    { title: "Data retention period", data: "dataRetention" },
+    { title: "Support", data: "support", header: true },
+    { title: "Lead-time", data: "leadTime" },
+    {
+      title: "Additional Features",
+      data: [
+        { label: "Data & video export", key: "dataExport" },
+        { label: "Event analytics", key: "eventAnalytics" },
+        { label: "Security audit", key: "securityAudit" },
+        { label: "Custom features", key: "customFeatures" },
+      ],
+      isBoolean: true,
+    },
+  ],
+
+  plans: [
+    {
+      name: "Enthusiast",
+      features: [true, true, true, true, true],
+      branding: "Logo & Colours Only",
+      uploadLimit: "2,000",
+      usagePeriod: "2 days",
+      dataRetention: "14 days",
+      support: "Email",
+      leadTime: "3 working days",
+    },
+    {
+      name: "Agency",
+      features: [true, true, true, true, true],
+      branding: "Custom Reskin",
+      uploadLimit: "10,000 +",
+      usagePeriod: "7 days +",
+      dataRetention: "30 days",
+      support: "Phone",
+      leadTime: "10 working days",
+    },
+    {
+      name: "Enterprise",
+      features: [true, true, true, true, true],
+      branding: "Custom Reskin",
+      uploadLimit: "Unlimited",
+      usagePeriod: "Up to 1 year",
+      dataRetention: "Up to 1 year",
+      support: "On-Site",
+      leadTime: "Flexible",
+    },
+  ],
 };
