@@ -1,9 +1,11 @@
-const Home = () => {
+import CtaSection from "@/sections/cta-section";
+import PricingPlan from "@/sections/pricing-plan";
+
+export default function Home() {
   return (
     <>
-      <h1>Backstage</h1>
+      <PricingPlan />
+      <CtaSection />
     </>
   );
-};
-
-export default Home;
+}
