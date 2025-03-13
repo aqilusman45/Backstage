@@ -68,4 +68,9 @@ export const homePageMocks = {
   ],
   subText: `Unsure? We o!er a 100% money back guarantee with all our plans. We
             can also organise a demo. Get in touch quite sure what you need?`,
+
+  cta: {
+    title: "Prefer to talk it through first?",
+    text: `If there's something we've missed, please get in touch and we can help answer your questions or queries.`,
+  },
 };

@@ -72,7 +72,7 @@ export default function PricingPlan({ otherClasses }) {
             hasScrolled ? "text-fade" : "",
           )}
         >
-          <p className="flex-1 font-instrument-sans font-medium text-2xl lg:text-2rem lg:text-start text-center max-w-[703px] mx-auto lg:mx-0">
+          <p className="flex-1 font-instrument-sans font-medium text-2xl lg:text-2rem lg:text-start text-center max-w-703 mx-auto lg:mx-0">
             {subText}
           </p>
           <Button
