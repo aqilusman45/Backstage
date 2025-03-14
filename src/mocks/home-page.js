@@ -351,6 +351,7 @@ export const homePageMocks = {
       cols: { default: 12, sm: 6, md: 6, lg: 6 },
     },
   ],
+<<<<<<< HEAD
 
   services: [
     {
@@ -380,6 +381,45 @@ export const homePageMocks = {
       alt: "slider",
       heading: "Fill downtimes with fun",
       text: "The Fan Cam is an ideal filler for downtimes, keeping the audience entertained between events.",
+    }
+  ],
+
+  filledWithFeatureData: [
+    {
+      icon: "/svg/brand.svg",
+      title: "Branded big screen interface",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/recording-app.svg",
+      title: "Smartphone recording app",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/gdpr.svg",
+      title: "GDPR compliance",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/real-time.svg",
+      title: "Real-time Moderation Options",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/shareable-recordings.svg",
+      title: "Shareable video recordings",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/private-aadmin.svg",
+      title: "Private Admin Panel",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
     },
   ],
 };
