@@ -298,4 +298,43 @@ export const homePageMocks = {
         "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
     },
   ],
+
+  filledWithFeatureData: [
+    {
+      icon: "/svg/brand.svg",
+      title: "Branded big screen interface",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/recording-app.svg",
+      title: "Smartphone recording app",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/gdpr.svg",
+      title: "GDPR compliance",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/real-time.svg",
+      title: "Real-time Moderation Options",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/shareable-recordings.svg",
+      title: "Shareable video recordings",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+    {
+      icon: "/svg/private-aadmin.svg",
+      title: "Private Admin Panel",
+      description:
+        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
+    },
+  ],
 };
