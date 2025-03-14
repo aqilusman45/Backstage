@@ -298,4 +298,57 @@ export const homePageMocks = {
         "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
     },
   ],
+
+  events: [
+    {
+      icon: "/svg/01.svg",
+      title: "Sporting Events",
+      text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
+      cols: { default: 12, sm: 6, md: 4, lg: 4 },
+      rows: 2,
+      image: "/png/mobile.png",
+    },
+    {
+      icon: "/svg/02.svg",
+      title: "Advertising Boards",
+      text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
+      cols: { default: 12, sm: 6, md: 4, lg: 4 },
+    },
+    {
+      icon: "/svg/03.svg",
+      title: "Corporate Keynotes",
+      text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
+      cols: { default: 12, sm: 6, md: 4, lg: 4 },
+    },
+    {
+      icon: "/svg/04.svg",
+      title: "Fun-runs and Marathons",
+      text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
+      cols: { default: 12, sm: 6, md: 4, lg: 4 },
+    },
+    {
+      icon: "/svg/05.svg",
+      title: "Festivals",
+      text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
+      cols: { default: 12, sm: 6, md: 4, lg: 4 },
+    },
+    {
+      icon: "/svg/06.svg",
+      title: "Conferences",
+      text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
+      cols: { default: 12, sm: 6, md: 3, lg: 3 },
+    },
+    {
+      icon: "/svg/07.svg",
+      title: "Concerts & Gigs",
+      text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
+      cols: { default: 12, sm: 6, md: 3, lg: 3 },
+    },
+    {
+      icon: "/svg/08.svg",
+      title: "Brand Events",
+      text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
+      cols: { default: 12, sm: 6, md: 6, lg: 6 },
+    },
+  ],
 };
