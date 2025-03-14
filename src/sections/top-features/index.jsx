@@ -1,14 +1,18 @@
+import Tooltip from "@/components/tooltip";
 import { homePageMocks } from "@/mocks/home-page";
 import classnames from "classnames";
 import Image from "next/image";
 
 export default function TopFeatures({ otherClasses }) {
-  const topFeaturesClasses = classnames(otherClasses, "mx-6");
+  const topFeaturesClasses = classnames(
+    otherClasses,
+    "mx-6 relative overflow-x-clip",
+  );
   const { featureSections, plansData } = homePageMocks;
 
   return (
     <section className={topFeaturesClasses} data-testid="top-features">
-      <div className="max-w-1120 mx-auto overflow-hidden rounded-2xl my-14 lg:my-20 border border-black/10 ">
+      <div className="max-w-1120 mx-auto overflow-hidden rounded-2xl my-14 lg:my-20 border border-black/10">
         <div className="overflow-x-auto">
           <table className="min-w-800 w-full border-collapse">
             <thead>
@@ -35,8 +39,17 @@ export default function TopFeatures({ otherClasses }) {
                     section?.header ? "bg-gray-400" : "bg-white",
                   )}
                 >
-                  <td className="p-4 font-normal font-instrument-sans text-base pl-10 text-black/60">
+                  <td className="p-4 font-normal font-instrument-sans text-base pl-10 text-black/60 flex items-center gap-1 justify-start">
                     {section.title}
+                    {section.info && (
+                      <Image
+                        src="/svg/info.svg"
+                        width={18}
+                        height={18}
+                        alt="Cross"
+                        className="max-w-18 max-h-18 object-cover cursor-pointer"
+                      />
+                    )}
                   </td>
                   {plansData.plans.map((plan, planIndex) => (
                     <td key={planIndex} className="p-4 text-center">
@@ -70,6 +83,9 @@ export default function TopFeatures({ otherClasses }) {
             </tbody>
           </table>
         </div>
+      </div>
+      <div className="hidden 2xl:block absolute top-1/3 right-1/5 z-50 transform rotate-[8deg]">
+        <Tooltip />
       </div>
     </section>
   );
