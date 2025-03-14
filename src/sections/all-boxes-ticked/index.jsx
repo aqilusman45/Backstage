@@ -1,3 +1,4 @@
+import Heading from "@/components/heading";
 import { homePageMocks } from "@/mocks/home-page";
 import classnames from "classnames";
 
@@ -12,10 +13,7 @@ export default function AllBoxesTicked({ otherClasses }) {
   return (
     <section className={allBoxesTickedClasses} data-testid="all-boxes-ticked">
       <div className="max-w-1120 mx-auto text-center">
-        <h2 className="text-center text-4xl sm:text-5xl lg:text-65 font-bold order-1 sm:order-0 text-black font-instrument-sans uppercase text-center">
-          {allBoxTitle}{" "}
-          <span className="font-medium italic">{allBoxSubText}</span>
-        </h2>
+        <Heading title={allBoxTitle} subTitle={allBoxSubText} />
 
         <p className="text-lg text-gray-900 font-normal font-instrument-sans text-center flex-grow mt-5 mb-12 max-w-2xl mx-auto">
           {allBoxText}
