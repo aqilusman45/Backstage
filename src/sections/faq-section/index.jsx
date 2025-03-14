@@ -9,7 +9,7 @@ export default function FaqSection({ otherClasses }) {
   const { faqQuestions } = homePageMocks;
 
   const faqSectionClasses = classnames(otherClasses, "mx-6 my-14 lg:my-20");
-  const [activeId, setActiveId] = useState(null);
+  const [activeId, setActiveId] = useState(1);
 
   return (
     <section className={faqSectionClasses} data-testid="faq-section">
@@ -38,7 +38,7 @@ export default function FaqSection({ otherClasses }) {
               <h3 className="font-semibold text-30 font-instrument-sans ">
                 Ask a Question
               </h3>
-              <p className="text-normal font-instrument-sans  text-xl text-black/50">
+              <p className="text-normal font-instrument-sans  text-xl text-black/50 text-center">
                 Here's what some of my satisfied clients have to say about my
                 work{" "}
               </p>
@@ -46,7 +46,7 @@ export default function FaqSection({ otherClasses }) {
                 label="Ask a Question"
                 variant="primary"
                 size="small"
-                otherClasses="w-full"
+                otherClasses="mt-2"
               />
             </div>
           </div>
