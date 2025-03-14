@@ -1,0 +1,19 @@
+.tooltip {
+  @apply relative block border border-b-black;
+}
+
+.tooltip .tooltiptext {
+  @apply w-60 bg-black text-white text-center absolute z-10 bottom-[150%] left-1/2 -ml-[60px] px-[13px] py-[15px];
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  border-width: 15px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  @apply absolute content-[""] top-[100%] left-[10%] -ml-[5px];
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
