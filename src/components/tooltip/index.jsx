@@ -5,7 +5,7 @@ export default function Tooltip({ otherClasses }) {
 
   return (
     <div className={tooltipClasses} data-testid="tooltip">
-      <span className="tooltiptext">
+      <span className="tooltiptext rounded-xl">
         Additional uploads available, priced at €100 per x1000 additional
         uploads
       </span>
