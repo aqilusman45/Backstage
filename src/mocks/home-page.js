@@ -215,4 +215,53 @@ export const homePageMocks = {
       header: true,
     },
   ],
+  allBoxFeatures: [
+    {
+      title: "Private Admin Console",
+      description:
+        "You get access to a custom admin console that contains everything you need to run the app.",
+    },
+    {
+      title: "Secure Trusted Hosting",
+      description:
+        "You don’t need to worry about a thing, we handle all the technology with trusted, secure and scalable hosting behind-the-scenes.",
+    },
+    {
+      title: "User Consent Tracking",
+      description:
+        "We make sure to track every user’s consent to make sure there’s no GDPR headaches down the line.",
+    },
+    {
+      title: "Event Analytics",
+      description:
+        "You can report back to your client or boss with all of the analytics of who took part.",
+      borderRight: true,
+    },
+    {
+      title: "Vetted Privacy Policies and T&Cs",
+      description:
+        "We’ll give you a ready-to-go privacy policy and T&Cs to make sure that all of the legal stuff is handled.",
+    },
+    {
+      title: "Multiple Moderation Options",
+      description:
+        "You can either review it yourself using our real-time moderation panel, or make the user verify their phone number before recording.",
+    },
+    {
+      title: "Automated Data Deletion",
+      description:
+        "It’s hard to remember what happened yesterday, let alone months ago. We’ll delete all the loose end automatically after a set period, meaning you don’t get caught out.",
+    },
+    {
+      title: "Reporting and Data Export",
+      description:
+        "Have your own systems in play? No problem, you can export all of your data so that it can be easily imported into your own CRMs or platforms.",
+      borderRight: true,
+    },
+  ],
+
+  allBoxTitle: "ALL BOXES",
+  allBoxSubText: "TICKED",
+  allBoxText:
+    "It’s not only fun for the fans, we’ve got you covered with all the behind-the-scenes features to make your event a breeze to oversee.",
 };
