@@ -264,4 +264,37 @@ export const homePageMocks = {
   allBoxSubText: "TICKED",
   allBoxText:
     "It’s not only fun for the fans, we’ve got you covered with all the behind-the-scenes features to make your event a breeze to oversee.",
+
+  faqQuestions: [
+    {
+      id: 1,
+      question: "Is there a free trial available?",
+      answer:
+        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+    },
+    {
+      id: 2,
+      question: "How can I sign up for a free trial?",
+      answer:
+        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+    },
+    {
+      id: 3,
+      question: "What features are included in the free trial?",
+      answer:
+        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+    },
+    {
+      id: 4,
+      question: "Can I upgrade or downgrade my plan at any time?",
+      answer:
+        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+    },
+    {
+      id: 5,
+      question: "How secure is my data with Backstage?",
+      answer:
+        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+    },
+  ],
 };
