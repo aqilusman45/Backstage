@@ -1,5 +1,6 @@
 "use client";
 import Button from "@/components/button";
+import Heading from "@/components/heading";
 import { homePageMocks } from "@/mocks/home-page";
 import classnames from "classnames";
 import Image from "next/image";
@@ -14,9 +15,7 @@ export default function FaqSection({ otherClasses }) {
   return (
     <section className={faqSectionClasses} data-testid="faq-section">
       <div className="max-w-1120 mx-auto">
-        <h2 className="text-center text-4xl sm:text-5xl lg:text-65 font-bold order-1 sm:order-0 text-black font-instrument-sans uppercase">
-          Frequently Asked <span className="font-medium italic">Questions</span>
-        </h2>
+        <Heading title="Frequently Asked" subTitle="Questions" />
 
         <div className="flex lg:flex-row flex-col items-start justify-between gap-12 my-20 mx-auto">
           <div className="relative border border-black/10 rounded-xl overflex-hidden w-full md:w-2/5">

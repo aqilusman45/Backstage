@@ -1,5 +1,6 @@
 "use client";
 import Button from "@/components/button";
+import Heading from "@/components/heading";
 import OurPlan from "@/components/our-plan";
 import PricingCard from "@/components/pricing-card";
 import { homePageMocks } from "@/mocks/home-page";
@@ -34,9 +35,7 @@ export default function PricingPlan({ otherClasses }) {
       <div className="my-14 lg:my-20 text-center max-w-1120 mx-auto overflow-x-clip">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
           <span className="w-40 hidden md:block"></span>
-          <h2 className="text-center text-4xl sm:text-5xl lg:text-65 font-bold order-1 sm:order-0 text-black font-instrument-sans uppercase text-center">
-            {title} <span className="font-medium italic">{subTitle}</span>
-          </h2>
+          <Heading title={title} subTitle={subTitle} />
 
           <Image
             src={image}
