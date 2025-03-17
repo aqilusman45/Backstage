@@ -350,7 +350,7 @@ export const homePageMocks = {
       text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
       cols: { default: 12, sm: 6, md: 6, lg: 6 },
     },
-  ], 
+  ],
 
   services: [
     {
@@ -380,7 +380,7 @@ export const homePageMocks = {
       alt: "slider",
       heading: "Fill downtimes with fun",
       text: "The Fan Cam is an ideal filler for downtimes, keeping the audience entertained between events.",
-    }
+    },
   ],
 
   filledWithFeatureData: [
