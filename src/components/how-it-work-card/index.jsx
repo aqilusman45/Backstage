@@ -15,8 +15,8 @@ export default function HowItWorkCard({
 
   return (
     <div className={howItWorkCardClasses} data-testid="how-it-work-card">
-      <div className="flex items-start gap-y-5 sm:gap-x-8 lg:gap-x-14 mb-6 sm:mb-8 lg:mb-10">
-        <h2 className="font-semibold text-40 sm:text-50 lg:text-80 leading-none text-primary font-instrument-sans">
+      <div className="flex items-start gap-y-5 gap-x-4 sm:gap-x-8 lg:gap-x-14 mb-6 sm:mb-8 lg:mb-10">
+        <h2 className="font-semibold text-40 -mt sm:text-50 lg:text-80 leading-none text-primary font-instrument-sans">
           {sno}
         </h2>
         <div>

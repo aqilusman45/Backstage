@@ -22,9 +22,9 @@ export default function HowItWork({ otherClasses }) {
       />
 
       <div className="max-w-1120 mx-auto">
-        <Heading title="How I" subTitle="works" />
+        <Heading title="HOW IT" subTitle="works" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 sm:my-20 lg:my-120 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 mt-16 sm:my-20 lg:my-120 relative">
           {cardsData.map((card, index) => (
             <HowItWorkCard
               key={index}
