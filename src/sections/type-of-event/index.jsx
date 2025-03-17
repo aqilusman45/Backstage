@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function TypeOfEvent({ otherClasses }) {
   const typeOfEventClasses = classnames(
     otherClasses,
-    "px-6 my-14 lg:my-20 relative",
+    "my-14 lg:my-20 relative",
   );
   const { events } = homePageMocks;
   return (
@@ -24,12 +24,12 @@ export default function TypeOfEvent({ otherClasses }) {
           subTitle="of Event"
           otherClasses="max-w-736 mx-auto text-center"
         />
-        <div className="grid gap-8 grid-cols-12 mt-12">
+        <div className="grid gap-y-8 sm:gap-8 sm:grid-cols-12 mt-12 px-6 ">
           {events.map((event, index) => (
             <div
               key={index}
               className={classnames(
-                "bg-white shadow-sm rounded-3xl p-6 flex flex-col gap-3 items-start",
+                "bg-white shadow-sm rounded-3xl p-6 flex flex-col gap-3 items-start w-full",
                 {
                   "col-span-12": event.cols.default === 12,
                   "sm:col-span-6": event.cols.sm === 6,
@@ -43,19 +43,19 @@ export default function TypeOfEvent({ otherClasses }) {
                 },
               )}
             >
-              <div className="p-3 flex items-center justify-center rounded-full bg-gray-300">
+              <div className="p-4 flex items-center justify-center rounded-full bg-gray-300">
                 <Image
                   src={event.icon}
                   alt={event.title}
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-black">
+              <h3 className="text-xl font-semibold text-black font-instrument-sans">
                 {event.title}
               </h3>
-              <p className="text-base text-normal text-gray-900">
+              <p className="text-base text-normal text-gray-900 font-instrument-sans">
                 {event.text}
               </p>
               {event?.image && (

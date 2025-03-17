@@ -84,7 +84,7 @@ export default function TopFeatures({ otherClasses }) {
           </table>
         </div>
       </div>
-      <div className="hidden 2xl:block absolute top-1/3 right-1/5 z-50 transform rotate-[8deg]">
+      <div className="hidden 2xl:block absolute top-39 bg-red-400 right-22 z-50 transform rotate-[8deg]">
         <Tooltip />
       </div>
     </section>
