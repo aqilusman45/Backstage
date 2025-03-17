@@ -350,8 +350,7 @@ export const homePageMocks = {
       text: "Whether it&apos;s the premier league or just a local college event, the Fan Cam is perfect for any type",
       cols: { default: 12, sm: 6, md: 6, lg: 6 },
     },
-  ],
-<<<<<<< HEAD
+  ], 
 
   services: [
     {
