@@ -2,6 +2,7 @@ import AllBoxesTicked from "@/sections/all-boxes-ticked";
 import CtaSection from "@/sections/cta-section";
 import EventToLife from "@/sections/event-to-life";
 import FaqSection from "@/sections/faq-section";
+import FilledWithFeature from "@/sections/filled-with-feature";
 import PricingPlan from "@/sections/pricing-plan";
 import TopFeatures from "@/sections/top-features";
 import TypeOfEvent from "@/sections/type-of-event";
@@ -9,6 +10,7 @@ import TypeOfEvent from "@/sections/type-of-event";
 export default function Home() {
   return (
     <>
+      <FilledWithFeature />
       <TypeOfEvent />
       <EventToLife />
       <PricingPlan />
