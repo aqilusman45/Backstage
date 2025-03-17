@@ -29,8 +29,8 @@ export default function FaqSection({ otherClasses }) {
             <div className="relative px-8 py-20 flex items-center justify-center flex-col gap-3">
               <Image
                 src="/svg/logo.svg"
-                width={128}
-                height={128}
+                width={104}
+                height={104}
                 alt="ask question logo"
                 className=""
               />
