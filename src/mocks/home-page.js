@@ -351,4 +351,35 @@ export const homePageMocks = {
       cols: { default: 12, sm: 6, md: 6, lg: 6 },
     },
   ],
+
+  services: [
+    {
+      url: "#",
+      image: "/png/01.png",
+      alt: "slider",
+      heading: "Turn participants into performers",
+      text: "The Fan Cam is an ideal filler for downtimes, keeping the audience entertained between events.",
+    },
+    {
+      url: "#",
+      image: "/png/01.png",
+      alt: "slider",
+      heading: "Super socials",
+      text: "Generate amazing content that can be shared on your socials after the event.",
+    },
+    {
+      url: "#",
+      image: "/png/01.png",
+      alt: "slider",
+      heading: "Leave a mark",
+      text: "Let users leave the event with a special memory that they can easily share with friends.",
+    },
+    {
+      url: "#",
+      image: "/png/01.png",
+      alt: "slider",
+      heading: "Fill downtimes with fun",
+      text: "The Fan Cam is an ideal filler for downtimes, keeping the audience entertained between events.",
+    },
+  ],
 };
