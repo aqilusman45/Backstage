@@ -38,7 +38,7 @@ export default function EventToLife({ otherClasses }) {
           <div className="hidden lg:flex justify-end items-center gap-4">
             <button
               onClick={() => sliderRef.current.slickPrev()}
-              className="p-6 rounded-full bg-primary hover:bg-gray-800 transition-all ease-in-out duration-300 flex items-center justify-center cursor-pointer"
+              className="p-6 rounded-full hover:bg-primary bg-gray-800 transition-all ease-in-out duration-300 flex items-center justify-center cursor-pointer"
             >
               <Image
                 src="/svg/arrow-left.svg"
@@ -49,7 +49,7 @@ export default function EventToLife({ otherClasses }) {
             </button>
             <button
               onClick={() => sliderRef.current.slickNext()}
-              className="p-6 rounded-full bg-primary hover:bg-gray-800 transition-all ease-in-out duration-300 flex items-center justify-center cursor-pointer"
+              className="p-6 rounded-full hover:bg-primary bg-gray-800 transition-all ease-in-out duration-300 flex items-center justify-center cursor-pointer"
             >
               <Image
                 src="/svg/arrow-right.svg"
@@ -91,7 +91,7 @@ export default function EventToLife({ otherClasses }) {
         <div className="flex justify-center mt-6 lg:hidden gap-4">
           <button
             onClick={() => sliderRef.current.slickPrev()}
-            className="p-5 rounded-full bg-gray-800 flex items-center justify-center"
+            className="p-5 rounded-full hover:bg-primary bg-gray-800 flex items-center justify-center"
           >
             <Image
               src="/svg/arrow-left.svg"
@@ -102,7 +102,7 @@ export default function EventToLife({ otherClasses }) {
           </button>
           <button
             onClick={() => sliderRef.current.slickNext()}
-            className="p-5 rounded-full bg-primary flex items-center justify-center"
+            className="p-5 rounded-full hover:bg-primary bg-gray-800 flex items-center justify-center"
           >
             <Image
               src="/svg/arrow-right.svg"
