@@ -46,7 +46,7 @@ export default function PricingCard({
           <Button
             label="Get Started"
             variant="primary"
-            size="medium"
+            size="small"
             otherClasses="w-full"
           />
         </div>

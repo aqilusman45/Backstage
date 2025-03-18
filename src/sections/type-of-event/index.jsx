@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function TypeOfEvent({ otherClasses }) {
   const typeOfEventClasses = classnames(
     otherClasses,
-    "my-14 lg:my-20 relative",
+    "my-14 lg:my-20 relative px-6 ",
   );
   const { events } = homePageMocks;
   return (
@@ -24,7 +24,7 @@ export default function TypeOfEvent({ otherClasses }) {
           subTitle="of Event"
           otherClasses="max-w-736 mx-auto text-center"
         />
-        <div className="grid gap-y-8 sm:gap-8 sm:grid-cols-12 mt-12 px-6 ">
+        <div className="grid gap-y-8 sm:gap-8 sm:grid-cols-12 mt-12">
           {events.map((event, index) => (
             <div
               key={index}
