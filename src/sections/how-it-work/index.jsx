@@ -7,12 +7,16 @@ import Image from "next/image";
 export default function HowItWork({ otherClasses }) {
   const howItWorkClasses = classnames(
     otherClasses,
-    "my-14 lg:my-20 relative overflow-x-clip relative px-6",
+    "my-14 lg:my-20 relative overflow-x-clip relative px-6 scroll-mt-40",
   );
   const { cardsData } = homePageMocks;
-  cardsData;
+
   return (
-    <section className={howItWorkClasses} data-testid="how-it-work">
+    <section
+      className={howItWorkClasses}
+      data-testid="how-it-work"
+      id="how-it-work"
+    >
       <Image
         src="/png/how-it-works-bg.png"
         alt=""

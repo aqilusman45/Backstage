@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function FilledWithFeature({ otherClasses }) {
   const filledWithFeatureClasses = classnames(
     otherClasses,
-    "my-14 lg:my-20 mx-6 overflow-x-clip",
+    "my-14 lg:my-20 mx-6 overflow-x-clip scroll-mt-40",
   );
 
   const { filledWithFeatureData } = homePageMocks;
@@ -15,6 +15,7 @@ export default function FilledWithFeature({ otherClasses }) {
     <section
       className={filledWithFeatureClasses}
       data-testid="filled-with-feature"
+      id="filled-with-feature"
     >
       <div className="max-w-1120 mx-auto">
         <Heading title="FILLED WITH" subTitle="FEATURES" />

@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export default function PricingPlan({ otherClasses }) {
-  const pricingPlanClasses = classnames(otherClasses, "px-6");
+  const pricingPlanClasses = classnames(otherClasses, "px-6 scroll-mt-32");
   const { title, subTitle, pricingPlans, text, image, features, subText } =
     homePageMocks;
   const scrollRef = useRef(null);
@@ -31,7 +31,11 @@ export default function PricingPlan({ otherClasses }) {
   }, [hasScrolled]);
 
   return (
-    <section className={pricingPlanClasses} data-testid="pricing-plan">
+    <section
+      className={pricingPlanClasses}
+      data-testid="pricing-plan"
+      id="pricing-plan"
+    >
       <div className="my-14 lg:my-20 text-center max-w-1120 mx-auto overflow-x-clip">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
           <span className="w-40 hidden md:block"></span>

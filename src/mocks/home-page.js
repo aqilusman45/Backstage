@@ -430,4 +430,35 @@ export const homePageMocks = {
         "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe.",
     },
   ],
+
+  cardsData: [
+    {
+      sno: "01",
+      title: "Sweatshirt",
+      content:
+        "Sweatshirt! They're particularly favored for sales, orders, and design, their relevance and especially during colder seasons!",
+      image: "/png/fan-cam-scan.png",
+    },
+    {
+      sno: "02",
+      title: "Hit Record",
+      content:
+        "Fans can record a message from their phones without having to download a thing. Within seconds, they're signed up and ready to go.",
+      image: "/png/fan-cam-scan.png",
+    },
+    {
+      sno: "03",
+      title: "Moderate",
+      content:
+        "The event team can monitor the broadcast from our custom real-time moderation panel.",
+      image: "/png/fan-cam-scan.png",
+    },
+    {
+      sno: "04",
+      title: "They're Live!",
+      content:
+        "Suitable videos are sent straight to the big screens, giving the audience a unique '15 seconds of fame!'",
+      image: "/png/fan-cam-scan.png",
+    },
+  ],
 };

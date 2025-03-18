@@ -7,9 +7,9 @@ import Image from "next/image";
 import classnames from "classnames";
 
 let nav = [
-  { link: "How it works", href: "#" },
-  { link: "Features", href: "#" },
-  { link: "Pricing", href: "#" },
+  { link: "How it works", href: "#how-it-work" },
+  { link: "Features", href: "#filled-with-feature" },
+  { link: "Pricing", href: "#pricing-plan" },
 ];
 export default function Navbar({ otherClasses }) {
   const navbarClasses = classnames(otherClasses, "px-6");
