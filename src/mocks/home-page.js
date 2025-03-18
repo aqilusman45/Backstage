@@ -1,4 +1,13 @@
 export const homePageMocks = {
+  homeHero: {
+    text: "Give your experiential agency the edge with creative technology guaranteed to move the dial.",
+    subText: ` The live Fan Cam is a brand activation perfect for event marketing
+          agencies, brands and organizations that want something fun to spice up
+          their next live event.`,
+    span: " Using cutting edge technology, the Fan Cam lets event attendees to take over the big",
+    subText2: " screen and record a message that goes live in seconds.",
+  },
+
   title: "Pricing",
   subTitle: "Plan",
   image: "/svg/get-started.svg",

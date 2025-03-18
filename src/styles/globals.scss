@@ -27,8 +27,13 @@
 
   --text-30: 1.875rem;
 
+  --text-85: 5.313rem;
+  --text-85--line-height: 6.25rem;
+
   --text-50: 3.125rem;
   --text-40: 2.5rem;
+
+  --text-35: 2.188rem;
 
   // spacing
   --spacing-medium-y: 1.563rem;
@@ -36,18 +41,21 @@
 
   --spacing-normal-y: 1rem;
   --spacing-1120: 70rem;
+  --spacing-2000: 125rem;
   --spacing-205: 12.813rem;
   --spacing-18: 1.125rem;
   --spacing-703: 43.938rem;
   --spacing-800: 50rem;
   --spacing-120: 7.5rem;
   --spacing-736: 46rem;
+  --spacing-119: 7.438rem;
   --spacing-39: 39%;
   --spacing-22: 22%;
 
   --spacing-70: 70%;
   --spacing-30: 30%;
   --spacing-648: 40.5rem;
+  --radius-60: 3.75rem;
 }
 
 @keyframes fadeIn {

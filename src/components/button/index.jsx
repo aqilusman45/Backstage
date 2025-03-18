@@ -16,7 +16,7 @@ const Button = ({
       "text-white bg-black rounded-full hover:bg-white transform hover:scale-[1.02] hover:shadow-md hover:text-black border border-2-black":
         variant === "primary",
 
-      "text-black bg-white border border-white hover:border-black rounded-full hover:bg-black hover:text-white transform hover:scale-[1.02]":
+      "text-black bg-white border border-white hover:border-white rounded-full hover:bg-black hover:text-white transform hover:scale-[1.02]":
         variant === "secondary",
 
       "text-black border border-2-black text-black rounded-full hover:bg-black hover:text-white transform hover:scale-[1.02]":
@@ -24,7 +24,7 @@ const Button = ({
 
       "rounded-full font-medium text-lg xl:text-xxii px-medium-x py-medium-y ":
         size === "large",
-      "rounded-full text-base lg:text-lg xl:text-20 font-medium px-8 xl:px-medium-x py-normal-y ":
+      "rounded-full text-base lg:text-lg font-medium px-11 xl:px-11 py-normal-y ":
         size === "medium",
       "rounded-full !text-base font-medium !px-8 !py-4 ": size === "small",
     },
