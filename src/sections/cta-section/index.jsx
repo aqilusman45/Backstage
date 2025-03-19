@@ -9,7 +9,7 @@ export default function CtaSection({ otherClasses }) {
   const { cta } = homePageMocks;
   return (
     <section className={ctaSectionClasses} data-testid="cta-section">
-      <div className="max-w-1120 mx-auto px-6 bg-primary px-6 lg:px-28 rounded-2xl relative">
+      <div className="max-w-1120 mx-auto px-6 bg-primary px-6 lg:px-28 rounded-2xl relative overflow-hidden">
         <Image
           src="/svg/cta-background.svg"
           width={1120}

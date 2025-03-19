@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import AllBoxesTicked from "@/sections/all-boxes-ticked";
 import CtaSection from "@/sections/cta-section";
 import EventToLife from "@/sections/event-to-life";
@@ -24,6 +25,7 @@ export default function Home() {
       <FaqSection />
       <CtaSection />
       <AllBoxesTicked />
+      <Footer />
     </>
   );
 }
