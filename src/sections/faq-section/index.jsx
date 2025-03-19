@@ -18,13 +18,13 @@ export default function FaqSection({ otherClasses }) {
         <Heading title="Frequently Asked" subTitle="Questions" />
 
         <div className="flex lg:flex-row flex-col items-start justify-between gap-12 mt-10 lg:mt-14 mx-auto">
-          <div className="relative border border-black/10 rounded-xl overflex-hidden w-full sm:w-3/4 lg:w-2/5">
+          <div className="relative rounded-xl overflex-hidden w-full sm:w-3/4 lg:w-2/5">
             <Image
-              src="/svg/ask-question-background.svg"
+              src="/png/ask-question-background.png"
               width={424}
               height={428}
               alt="ask question logo"
-              className="absolute top-0 left-0 w-full h-full object-cover"
+              className="absolute top-0 left-0 w-full h-full object-fill"
             />
             <div className="relative px-8 py-20 flex items-center justify-center flex-col gap-3">
               <Image
