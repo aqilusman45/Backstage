@@ -78,6 +78,7 @@ export default function Navbar({ otherClasses }) {
               width={120}
               height={30}
               className="absolute top-6 md:top-5 left-8 text-white lg:hidden lg:w-auto h-auto w-36 h-7 sm:w-40 sm:h-8 cursor-pointer"
+              onClick={closeMenu}
             />
             <button
               className="absolute top-6 right-8 text-white lg:hidden"

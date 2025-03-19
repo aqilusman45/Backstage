@@ -27,7 +27,7 @@ export default function FilledWithFeature({ otherClasses }) {
                 key={index}
                 className="bg-white p-6 rounded-3xl border border-black/10 h-full flex flex-col"
               >
-                <div className="flex items-center gap-5 border-b border-black/15 border-dashed pb-4 pr-10">
+                <div className="flex items-center gap-5 border-b border-black/15 border-dashed pb-4 lg:pr-10">
                   <Image
                     src={feature.icon}
                     width={24}
@@ -62,7 +62,7 @@ export default function FilledWithFeature({ otherClasses }) {
                 key={index}
                 className="bg-white p-6 rounded-3xl border border-black/10 h-full flex flex-col"
               >
-                <div className="flex items-center gap-5 border-b border-black/15 border-dashed pb-4 pr-10">
+                <div className="flex items-center gap-5 border-b border-black/15 border-dashed pb-4 lg:pr-10">
                   <Image
                     src={feature.icon}
                     width={24}
