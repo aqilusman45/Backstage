@@ -22,9 +22,9 @@ export default function Home() {
       <TypeOfEvent />
       <PricingPlan />
       <TopFeatures />
+      <AllBoxesTicked />
       <FaqSection />
       <CtaSection />
-      <AllBoxesTicked />
       <Footer />
     </>
   );
