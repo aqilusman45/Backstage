@@ -63,7 +63,7 @@ export default function Footer({ otherClasses }) {
             />
           </div>
 
-          <p className="pt-10 pb-10 md:pt-32 text-white text-center font-instrument-sans text-22">
+          <p className="pt-10 pb-4 lg:pb-10 md:pt-32 text-white text-center font-instrument-sans text-22">
             <span className="text-primary">©backstage.</span> All rights
             reserved
           </p>
