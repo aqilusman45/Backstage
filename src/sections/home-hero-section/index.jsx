@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function HomeHeroSection({ otherClasses }) {
   const homeHeroSectionClasses = classnames(
     otherClasses,
-    "mb-14 lg:mb-20 overflow-x-clip   flex items-center justify-center flex-col",
+    "mb-14 lg:mb-120 overflow-x-clip flex items-center justify-center flex-col",
   );
   const { text, subText, span, subText2 } = homePageMocks.homeHero;
 
