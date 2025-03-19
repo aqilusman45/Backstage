@@ -38,19 +38,19 @@ export default function Footer({ otherClasses }) {
                 label="LinkedIn"
                 variant="secondary"
                 size="medium"
-                otherClasses="w-full sm:w-auto !px-12 !py-6"
+                otherClasses="w-full sm:w-auto !px-12 lg:!py-6 lg:!text-[25px]"
               />
               <Button
                 label="Instagram"
                 variant="secondary"
                 size="medium"
-                otherClasses="w-full sm:w-auto !px-12 !py-6"
+                otherClasses="w-full sm:w-auto !px-12 lg:!py-6 lg:!text-[25px]"
               />
               <Button
                 label="Twitter/X"
                 variant="secondary"
                 size="medium"
-                otherClasses="w-full sm:w-auto  !px-16 !py-6"
+                otherClasses="w-full sm:w-auto  !px-12 lg:!py-6 lg:!text-[25px]"
               />
             </div>
 
