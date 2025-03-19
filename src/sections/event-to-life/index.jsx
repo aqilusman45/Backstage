@@ -94,7 +94,7 @@ export default function EventToLife({ otherClasses }) {
         <div className="flex justify-center mt-6 lg:hidden gap-4">
           <button
             onClick={() => sliderRef.current.slickPrev()}
-            className="p-5 rounded-full hover:bg-primary bg-gray-800 flex items-center justify-center"
+            className="p-5 rounded-full hover:bg-primary active:bg-primary bg-gray-800 flex items-center justify-center"
           >
             <Image
               src="/svg/arrow-left.svg"
@@ -105,7 +105,7 @@ export default function EventToLife({ otherClasses }) {
           </button>
           <button
             onClick={() => sliderRef.current.slickNext()}
-            className="p-5 rounded-full hover:bg-primary bg-gray-800 flex items-center justify-center"
+            className="p-5 rounded-full hover:bg-primary active:bg-primary bg-gray-800 flex items-center justify-center"
           >
             <Image
               src="/svg/arrow-right.svg"

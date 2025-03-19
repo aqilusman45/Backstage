@@ -57,7 +57,7 @@ export default function HomeHeroSection({ otherClasses }) {
           <span className="text-black/50 font-medium italic"> {span}</span>
           {subText2}
         </p>
-        <div className="bg-black hover:bg-primary duration-300 cursor-pointer w-24 h-24 lg:w-119 lg:h-119 p-2 rounded-full flex items-center justify-center mx-auto mt-8 lg:mt-14">
+        <div className="bg-black hover:bg-primary active:bg-primary duration-300 cursor-pointer w-24 h-24 lg:w-119 lg:h-119 p-2 rounded-full flex items-center justify-center mx-auto mt-8 lg:mt-14">
           <Image
             src="/png/decorative.png"
             alt="Decorative Image"
