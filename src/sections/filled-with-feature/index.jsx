@@ -52,7 +52,7 @@ export default function FilledWithFeature({ otherClasses }) {
               alt="Fan Cam"
               width={400}
               height={632}
-              className="rounded-lg w-full h-auto min-h-648"
+              className="rounded-lg w-full h-auto lg:min-h-648"
             />
           </div>
 
