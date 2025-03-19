@@ -17,7 +17,7 @@ export default function Footer({ otherClasses }) {
             alt="footer Image"
             width={1120}
             height={1016}
-            className="w-full h-full  "
+            className="w-full h-full object-fill"
             priority
           />
         </div>
@@ -38,19 +38,19 @@ export default function Footer({ otherClasses }) {
                 label="LinkedIn"
                 variant="secondary"
                 size="medium"
-                otherClasses="w-full sm:w-auto"
+                otherClasses="w-full sm:w-auto !px-12 !py-6"
               />
               <Button
                 label="Instagram"
                 variant="secondary"
                 size="medium"
-                otherClasses="w-full sm:w-auto"
+                otherClasses="w-full sm:w-auto !px-12 !py-6"
               />
               <Button
                 label="Twitter/X"
                 variant="secondary"
                 size="medium"
-                otherClasses="w-full sm:w-auto"
+                otherClasses="w-full sm:w-auto  !px-16 !py-6"
               />
             </div>
 
@@ -63,7 +63,7 @@ export default function Footer({ otherClasses }) {
             />
           </div>
 
-          <p className="pt-10 pb-10 md:pt-32 text-white text-center">
+          <p className="pt-10 pb-10 md:pt-32 text-white text-center font-instrument-sans text-22">
             <span className="text-primary">©backstage.</span> All rights
             reserved
           </p>
