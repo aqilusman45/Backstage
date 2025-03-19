@@ -36,7 +36,7 @@ export default function PricingPlan({ otherClasses }) {
       data-testid="pricing-plan"
       id="pricing-plan"
     >
-      <div className="my-14 lg:my-20 text-center max-w-1120 mx-auto overflow-x-clip">
+      <div className="my-14 md:my-20 lg:my-120 text-center max-w-1120 mx-auto overflow-x-clip">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
           <span className="w-40 hidden md:block"></span>
           <Heading title={title} subTitle={subTitle} />
@@ -54,7 +54,7 @@ export default function PricingPlan({ otherClasses }) {
         </p>
         <div
           className={classnames(
-            "grid grid-cols-1 sm:grid-cols-2 xl:flex items-center justify-center flex-wrap gap-4 mb-20 fade-in",
+            "grid grid-cols-1 sm:grid-cols-2 xl:flex items-center justify-center flex-wrap gap-4 mb-14 md:mb-20 lg:mb-120  fade-in",
           )}
         >
           {features.map((feature, index) => (
@@ -62,7 +62,7 @@ export default function PricingPlan({ otherClasses }) {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full my-14 lg:mt-32 lg:mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full my-14 md:my-20 lg:my-120 ">
           {pricingPlans.map((plan, index) => (
             <PricingCard key={index} {...plan} />
           ))}
@@ -71,7 +71,7 @@ export default function PricingPlan({ otherClasses }) {
         <div
           ref={scrollRef}
           className={classnames(
-            "flex flex-wrap items-center justify-between gap-4 my-14 lg:my-20 px-4",
+            "flex flex-wrap items-center justify-between gap-4 my-14 md:my-20 lg:my-120 px-4",
             hasScrolled ? "text-fade" : "",
           )}
         >

@@ -17,8 +17,8 @@ export default function FaqSection({ otherClasses }) {
       <div className="max-w-1120 mx-auto">
         <Heading title="Frequently Asked" subTitle="Questions" />
 
-        <div className="flex lg:flex-row flex-col items-start justify-between gap-12 my-20 mx-auto">
-          <div className="relative border border-black/10 rounded-xl overflex-hidden w-full md:w-2/5">
+        <div className="flex lg:flex-row flex-col items-start justify-between gap-12 mt-10 lg:mt-14 mx-auto">
+          <div className="relative border border-black/10 rounded-xl overflex-hidden w-full sm:w-3/4 lg:w-2/5">
             <Image
               src="/svg/ask-question-background.svg"
               width={424}
@@ -34,7 +34,7 @@ export default function FaqSection({ otherClasses }) {
                 alt="ask question logo"
                 className=""
               />
-              <h3 className="font-semibold text-30 font-instrument-sans ">
+              <h3 className="font-semibold text-30 font-instrument-sans">
                 Ask a Question
               </h3>
               <p className="text-normal font-instrument-sans  text-xl text-black/50 text-center">
@@ -50,7 +50,7 @@ export default function FaqSection({ otherClasses }) {
             </div>
           </div>
 
-          <div className="space-y-3 w-full lg:w-3/5">
+          <div className="space-y-6 w-full lg:w-3/5">
             {faqQuestions?.map(({ question, answer, id }) => {
               const isActive = activeId === id;
               return (

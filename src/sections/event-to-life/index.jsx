@@ -10,7 +10,10 @@ import { homePageMocks } from "@/mocks/home-page";
 
 export default function EventToLife({ otherClasses }) {
   const sliderRef = useRef(null);
-  const eventToLifeClasses = classnames(otherClasses, "mx-6 my-14 md:my-20");
+  const eventToLifeClasses = classnames(
+    otherClasses,
+    "mx-6 my-14 md:my-20 lg:my-120",
+  );
   const { services } = homePageMocks;
 
   const settings = {
@@ -22,14 +25,14 @@ export default function EventToLife({ otherClasses }) {
     arrows: false,
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1.5 } },
+      { breakpoint: 768, settings: { slidesToShow: 1 } },
     ],
   };
 
   return (
     <section className={eventToLifeClasses} data-testid="event-to-life">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-10 lg:mb-14">
           <Heading
             title="Bring your next event"
             subTitle="to life"
@@ -64,7 +67,7 @@ export default function EventToLife({ otherClasses }) {
         <Slider ref={sliderRef} {...settings} className="mt-8 lg:mt-12">
           {[...services, ...services, ...services].map(
             ({ image, alt, heading, text }, index) => (
-              <div className="px-1 md:px-5 outline-none" key={index}>
+              <div className="pr-2 md:pr-5 outline-none" key={index}>
                 <div className="relative flex flex-col h-full gap-4 rounded-3xl overflow-hidden group">
                   <Image
                     src={image}

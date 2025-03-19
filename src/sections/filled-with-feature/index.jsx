@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function FilledWithFeature({ otherClasses }) {
   const filledWithFeatureClasses = classnames(
     otherClasses,
-    "my-14 lg:my-20 mx-6 overflow-x-clip scroll-mt-40",
+    "my-16 lg:my-120 mx-6 overflow-x-clip scroll-mt-40",
   );
 
   const { filledWithFeatureData } = homePageMocks;
@@ -20,7 +20,7 @@ export default function FilledWithFeature({ otherClasses }) {
       <div className="max-w-1120 mx-auto">
         <Heading title="FILLED WITH" subTitle="FEATURES" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center mt-12 pb-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-4 items-center mt-10 lg:mt-14">
           <div className="flex flex-col gap-6">
             {filledWithFeatureData.slice(0, 3).map((feature, index) => (
               <div

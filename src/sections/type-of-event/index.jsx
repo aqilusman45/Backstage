@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function TypeOfEvent({ otherClasses }) {
   const typeOfEventClasses = classnames(
     otherClasses,
-    "my-14 lg:my-20 relative px-6 ",
+    "my-14 md:my-20 lg:my-120 relative px-6 ",
   );
   const { events } = homePageMocks;
   return (
@@ -18,13 +18,13 @@ export default function TypeOfEvent({ otherClasses }) {
         height={1600}
         className="w-full h-full absolute top-0 left-0"
       />
-      <div className="max-w-1120 mx-auto relative py-20 sm:py-32 lg:py-44">
+      <div className="max-w-1120 mx-auto relative py-24">
         <Heading
           title="Ideal For All Types"
           subTitle="of Event"
           otherClasses="max-w-736 mx-auto text-center"
         />
-        <div className="grid gap-y-8 sm:gap-8 sm:grid-cols-12 mt-12">
+        <div className="grid gap-y-8 sm:gap-x-4 lg:gap-8 sm:grid-cols-12 mt-10 lg:mt-14">
           {events.map((event, index) => (
             <div
               key={index}
