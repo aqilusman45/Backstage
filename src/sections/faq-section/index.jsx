@@ -64,7 +64,7 @@ export default function FaqSection({ otherClasses }) {
                       "flex justify-between items-center w-full text-xl font-medium text-black font-instrument-sans px-8 p-8"
                     }
                   >
-                    <span>{question}</span>
+                    <span className="text-start pr-1">{question}</span>
                     {isActive ? (
                       <Image
                         src="/svg/open.svg"
