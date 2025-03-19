@@ -17,14 +17,14 @@ export default function FaqSection({ otherClasses }) {
       <div className="max-w-1120 mx-auto">
         <Heading title="Frequently Asked" subTitle="Questions" />
 
-        <div className="flex lg:flex-row flex-col items-start justify-between gap-12 my-20 mx-auto">
-          <div className="relative border border-black/10 rounded-xl overflex-hidden w-full md:w-2/5">
+        <div className="flex lg:flex-row flex-col items-start justify-between gap-12 mt-10 lg:mt-14 mx-auto">
+          <div className="relative rounded-xl overflex-hidden w-full sm:w-3/4 lg:w-2/5">
             <Image
-              src="/svg/ask-question-background.svg"
+              src="/png/ask-question-background.png"
               width={424}
               height={428}
               alt="ask question logo"
-              className="absolute top-0 left-0 w-full h-full object-cover"
+              className="absolute top-0 left-0 w-full h-full object-fill"
             />
             <div className="relative px-8 py-20 flex items-center justify-center flex-col gap-3">
               <Image
@@ -34,7 +34,7 @@ export default function FaqSection({ otherClasses }) {
                 alt="ask question logo"
                 className=""
               />
-              <h3 className="font-semibold text-30 font-instrument-sans ">
+              <h3 className="font-semibold text-30 font-instrument-sans">
                 Ask a Question
               </h3>
               <p className="text-normal font-instrument-sans  text-xl text-black/50 text-center">
@@ -50,7 +50,7 @@ export default function FaqSection({ otherClasses }) {
             </div>
           </div>
 
-          <div className="space-y-3 w-full lg:w-3/5">
+          <div className="space-y-6 w-full lg:w-3/5">
             {faqQuestions?.map(({ question, answer, id }) => {
               const isActive = activeId === id;
               return (
@@ -64,7 +64,7 @@ export default function FaqSection({ otherClasses }) {
                       "flex justify-between items-center w-full text-xl font-medium text-black font-instrument-sans px-8 p-8"
                     }
                   >
-                    <span>{question}</span>
+                    <span className="text-start pr-1">{question}</span>
                     {isActive ? (
                       <Image
                         src="/svg/open.svg"

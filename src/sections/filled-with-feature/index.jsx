@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function FilledWithFeature({ otherClasses }) {
   const filledWithFeatureClasses = classnames(
     otherClasses,
-    "my-14 lg:my-20 mx-6 overflow-x-clip scroll-mt-40",
+    "my-16 lg:my-120 mx-6 overflow-x-clip scroll-mt-40",
   );
 
   const { filledWithFeatureData } = homePageMocks;
@@ -20,14 +20,14 @@ export default function FilledWithFeature({ otherClasses }) {
       <div className="max-w-1120 mx-auto">
         <Heading title="FILLED WITH" subTitle="FEATURES" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center mt-12 pb-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-4 items-center mt-10 lg:mt-14">
           <div className="flex flex-col gap-6">
             {filledWithFeatureData.slice(0, 3).map((feature, index) => (
               <div
                 key={index}
                 className="bg-white p-6 rounded-3xl border border-black/10 h-full flex flex-col"
               >
-                <div className="flex items-center gap-5 border-b border-black/15 border-dashed pb-4 pr-10">
+                <div className="flex items-center gap-5 border-b border-black/15 border-dashed pb-4 lg:pr-10">
                   <Image
                     src={feature.icon}
                     width={24}
@@ -52,7 +52,7 @@ export default function FilledWithFeature({ otherClasses }) {
               alt="Fan Cam"
               width={400}
               height={632}
-              className="rounded-lg w-full h-auto min-h-648"
+              className="rounded-lg w-full h-auto lg:min-h-648"
             />
           </div>
 
@@ -62,7 +62,7 @@ export default function FilledWithFeature({ otherClasses }) {
                 key={index}
                 className="bg-white p-6 rounded-3xl border border-black/10 h-full flex flex-col"
               >
-                <div className="flex items-center gap-5 border-b border-black/15 border-dashed pb-4 pr-10">
+                <div className="flex items-center gap-5 border-b border-black/15 border-dashed pb-4 lg:pr-10">
                   <Image
                     src={feature.icon}
                     width={24}

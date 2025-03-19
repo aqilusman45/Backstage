@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function HowItWork({ otherClasses }) {
   const howItWorkClasses = classnames(
     otherClasses,
-    "my-14 lg:my-20 relative overflow-x-clip relative px-6 scroll-mt-40",
+    "my-14 lg:my-100 relative overflow-x-clip relative px-6 scroll-mt-40 overflow-hidden",
   );
   const { cardsData } = homePageMocks;
 
@@ -22,13 +22,13 @@ export default function HowItWork({ otherClasses }) {
         alt=""
         width={3205}
         height={800}
-        className="absolute -top-230 -left-436 h-936 min-w-3205 h-full -mt-40"
+        className="absolute -top-230 -left-436 h-936 min-w-3205 h-full lg:-mt-20"
       />
 
-      <div className="max-w-1120 mx-auto">
+      <div className="max-w-1120 mx-auto pt-20 lg:pt-120">
         <Heading title="HOW IT" subTitle="works" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 mt-16 sm:my-20 lg:my-120 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 mt-10 lg:mt-14 relative">
           {cardsData.map((card, index) => (
             <HowItWorkCard
               key={index}

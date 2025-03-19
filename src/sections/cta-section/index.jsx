@@ -5,7 +5,10 @@ import classnames from "classnames";
 import Image from "next/image";
 
 export default function CtaSection({ otherClasses }) {
-  const ctaSectionClasses = classnames(otherClasses, "mx-6 my-14 lg:my-20");
+  const ctaSectionClasses = classnames(
+    otherClasses,
+    "mx-6 my-14 md:my-20 lg:my-120",
+  );
   const { cta } = homePageMocks;
   return (
     <section className={ctaSectionClasses} data-testid="cta-section">
@@ -19,7 +22,7 @@ export default function CtaSection({ otherClasses }) {
         />
         <div className="relative py-16 ">
           <Heading title={cta.title} subTitle={cta.subTitle} />
-          <p className="text-xl font-normal my-6 font-instrument-sans text-center lg:px-32 ">
+          <p className="text-xl font-normal my-6 font-instrument-sans text-center lg:px-32">
             {cta.text}
           </p>
           <div className="flex md:flex-row flex-col items-center justify-center gap-5">

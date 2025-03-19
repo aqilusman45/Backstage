@@ -6,13 +6,13 @@ import Image from "next/image";
 export default function TopFeatures({ otherClasses }) {
   const topFeaturesClasses = classnames(
     otherClasses,
-    "mx-6 relative overflow-x-clip",
+    "mx-6 relative overflow-x-clip my-14 md:my-20 lg:my-120",
   );
   const { featureSections, plansData } = homePageMocks;
 
   return (
     <section className={topFeaturesClasses} data-testid="top-features">
-      <div className="max-w-1120 mx-auto overflow-hidden rounded-2xl my-14 lg:my-20 border border-black/10">
+      <div className="max-w-1120 mx-auto overflow-hidden rounded-2xl border border-black/10">
         <div className="overflow-x-auto">
           <table className="min-w-800 w-full border-collapse">
             <thead>

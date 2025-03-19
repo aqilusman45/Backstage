@@ -17,9 +17,9 @@ export default function Home() {
       <Navbar />
       <HomeHeroSection />
       <HowItWork />
+      <EventToLife />
       <FilledWithFeature />
       <TypeOfEvent />
-      <EventToLife />
       <PricingPlan />
       <TopFeatures />
       <FaqSection />
